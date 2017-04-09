@@ -1,0 +1,28 @@
+{
+  "name": "vue-gun",
+  "version": "0.0.1",
+  "description": "A Vue plugin to add Gun integration",
+  "main": "vue-gun.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjones6/vue-gun.git"
+  },
+  "keywords": [
+    "Vue",
+    "GUN",
+    "Vue",
+    "plugin"
+  ],
+  "author": "sjones6",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjones6/vue-gun/issues"
+  },
+  "homepage": "https://github.com/sjones6/vue-gun#readme",
+  "dependencies": {
+    "gun": "^0.7.1"
+  }
+}
