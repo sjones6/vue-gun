@@ -1,7 +1,7 @@
 {
   "name": "vue-gun",
   "public": "true",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vue plugin to add Gun integration",
   "main": "vue-gun.js",
   "repository": {
