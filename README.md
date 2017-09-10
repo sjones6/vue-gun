@@ -4,21 +4,12 @@ A plugin to make Gun integration with Vue easier.
 
 ## Installation
 
-`npm install vue-gun` or `yarn add vue-gun`.
+`npm install vue-gun --save` or `yarn add vue-gun`.
 
 Add the plugin:
 
 ```javascript
 import VueGun from 'vue-gun';
-Vue.use(VueGun, {
-    gun // your gun instance
-});
-```
-
-OR:
-
-```javascript
-var VueGun = require('vue-gun');
 Vue.use(VueGun, {
     gun: gun // your gun instance
 });
@@ -26,7 +17,7 @@ Vue.use(VueGun, {
 
 ## Initialize Gun
 
-You can either pass in a `gun` instance fully initialized, or allow pass VueGun to initialize it for you:
+You can either pass in a `gun` instance fully initialized, or allow VueGun to initialize it for you:
 
 ```javascript
 import VueGun from 'vue-gun';
@@ -35,7 +26,7 @@ Vue.use(VueGun, {
 });
 ```
 
-Allow VueGun to handle initialization:
+Allow VueGun to handle initialization by passing in options:
 
 ```javascript
 import VueGun from 'vue-gun';
@@ -47,17 +38,17 @@ Vue.use(VueGun, {
 
 ## Usage
 
-You can access the GUN instance with `this.$gun` inside of your Vue instance and components.
+Access the `gun` instance with `this.$gun` inside of your Vue instance and components.
 
 For instance inside your component, you might have this:
 
 ```javascript
 mounted: function() {
-        this.$gun.get('some path').map().on((pathResult, key) => {
+        this.$gun.get('some path').map().on((node, key) => {
 
             // add results straight to the Vue component state
             // and get updates when nodes are updated by GUN
-            this.vueState[key] = pathResult;
+            this.vueState[key] = node;
         });
     },
 ```
