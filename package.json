@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/sjones6/vue-gun#readme",
   "dependencies": {
-    "gun": "^0.7.1"
+    "gun": "*"
   }
 }
