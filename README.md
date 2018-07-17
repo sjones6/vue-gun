@@ -21,6 +21,7 @@ You can either pass in a `gun` instance fully initialized, or allow VueGun to in
 
 ```javascript
 import VueGun from 'vue-gun';
+import SEA from 'gun/sea'; // Required for SEA functions and user authentication 
 Vue.use(VueGun, {
     gun: gun // must be passed in at `gun` key
 });
